@@ -5,15 +5,12 @@ import { MdFrontHand } from "react-icons/md";
 import { FaHandScissors } from "react-icons/fa6";
 import Desition from "./Desition";
 import Score from "./Score";
-import Choose from "./Choose";
-// import img1 from './app/Images/rock.png'
 
 const Option = () => {
   const [store, setstore] = useState("");
   const [store_2, setstore_2] = useState("");
   const [you_score, setyou_score] = useState(0);
   const [com_score, setcom_score] = useState(0);
-  // const [you, setyou] = useState('')
 
   const rock = () => {
     let value = Math.random();
@@ -27,8 +24,6 @@ const Option = () => {
 
     if (store == "rock") {
       setstore_2("Tie😫😫");
-      // setyou(()=> )
-      
     } else if (store == "paper") {
       setstore_2("You Loser😭😭");
       setcom_score(() => com_score + 1);
@@ -101,8 +96,6 @@ const Option = () => {
       <Desition store_2={store_2} />
       <br />
       <br />
-      <Choose />
-      {/* <img src="Images/rock.png" alt="" /> */}
     </>
   );
 };
